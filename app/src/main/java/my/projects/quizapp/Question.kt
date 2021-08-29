@@ -1,6 +1,6 @@
 package my.projects.quizapp
 
-data class Questions (
+data class Question (
     val id: Int,
     val question: String,
     val img: Int,
@@ -8,6 +8,5 @@ data class Questions (
     val optionTwo: String,
     val optionThree: String,
     val optionFour: String,
-    val correctAnswer: String,
-        ) {
-}
+    val correctAnswer: Int,
+        )

@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please enter your name", Toast.LENGTH_LONG).show()
             }
             else {
-                startActivity(Intent(this, QuizScreen::class.java))
+                startActivity(Intent(this, QuizScreen::class.java).putExtra(Constants.USER_NAME, tv_input.text.toString()))
                 finish()
             }
         }
